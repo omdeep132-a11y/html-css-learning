@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color:  #F4D04E;
+ 
+}
+.container{
+  
+  width: 310px;
+  padding: 20px;
+  border: 2px solid black;
+  background-color: aliceblue;
+  border-radius: 19px;
+  box-shadow: 8px 8px 0 black;
+}
+button{
+  width: 78px;
+  align-self: start;
+  margin-top: 10px;
+ padding: 4px;
+ background-color: #9c8328;
+ color: white;
+ border: none;
+ border-radius: 3px;
+ margin-top: 10px;
+ color: rgb(16, 10, 1);
+}
+#img1{
+ width: 100%;
+}
+p{
+  color: gray;
+   margin-top: 10px;
+   
+   
+}
+h1{
+
+  color:  #F4D04E;
+   margin-top: 10px;
+
+}
+
+
+#footer{
+
+  display: flex;
+  align-items: center;
+gap: 10px;
+margin-top: 20px;
+}
+#img2{
+  border-radius: 5px;
+  width: 30px;
+}
+  </style>
+</head>
+<body>
+<div class="container">
+
+   <div id="img">
+
+    <img id="img1" src="./assets/images/illustration-article.svg" alt="">
+   </div>
+
+
+ <button>Learning</button> 
+
+ <div id="content">
+  <p>Published 21 Dec 2023</p> 
+
+  <h1>HTML & CSS foundations</h1> 
+
+ <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+ </div>
+
+ <div id="footer">
+  <img id="img2" src="./assets/images/image-avatar.webp" alt="">
+  Greg Hooper
+  
+ </div>
+  </div>
+</body>
+</html>
