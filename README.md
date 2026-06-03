@@ -67,3 +67,42 @@ cover
 fit img one time only but tries to fit completely 
 auto '
 default fit real img px to space given to div 
+
+
+imp topic flex box 
+
+flex container propertys 
+
+align-items:center,end,start;
+use to align items vartically 
+
+justify-content:end,start,center,sace-between,space-around,space-evenly;
+use to align items horizontelly 
+
+flex-direction :
+column: use to set items in column 
+column-reverse: use to reverse boxes in column 
+
+row:oppsite to column
+row-reverse :opp to column-reverse
+
+flex-wrap:
+no-wrap ,wrap,none
+
+align-cotent:Aligns multiple rows/columns when wrapping occurs.
+stretch
+flex-start
+flex-end
+center
+space-between
+space-around
+space-evenly
+
+flex items propertys (it has higher priority then container property )
+
+order to shift boxes or change places of boxes according to 
+flex-grow : iteem to which this property is apllied occupis extra space in container 
+flex-shrink : default is 1 if set 2 then that item will srink in double then other items 
+align-self:allows  signel item to align  seprately frm containers functions
+
+
