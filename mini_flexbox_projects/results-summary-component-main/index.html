@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+   *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:hsl(221,100%,96%);
+}
+
+.container{
+    display:flex;
+    width:700px;
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* LEFT PANEL */
+
+#div1{
+    width:50%;
+    padding:35px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+border-radius: 20px;
+    text-align:center;
+
+    color:white;
+
+    background:linear-gradient(
+        hsl(257, 100%, 1%),
+        hsl(241,81%,54%)
+    );
+}
+
+#stdiv{
+    width:170px;
+    height:170px;
+
+    border-radius:50%;
+    border:none;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        hsla(256,72%,46%,1),
+        hsla(241,72%,46%,0)
+    );
+
+    margin:25px 0;
+}
+
+#numbers{
+    font-size:60px;
+    font-weight:bold;
+}
+
+#numbers span{
+    display:block;
+    font-size:16px;
+    color:lightgray;
+    margin-top:5px;
+}
+
+#div1 h1{
+    margin-bottom:15px;
+}
+
+#div1 p{
+    line-height:1.5;
+}
+
+/* RIGHT PANEL */
+
+#div2{
+    width:50%;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+    padding:35px;
+    background:white;
+}
+
+#div2 h2{
+    margin-bottom:10px;
+}
+
+.marks{
+    width:100%;
+    padding:15px;
+
+    border:none;
+    border-radius:10px;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+#div-inside1{
+    background:hsla(0,100%,67%,0.1);
+}
+
+#div-inside2{
+    background:hsla(39,100%,56%,0.1);
+}
+
+#div-inside3{
+    background:hsla(166,100%,37%,0.1);
+}
+
+#div-inside4{
+    background:hsla(234,85%,45%,0.1);
+}
+
+.marks p{
+    text-align:left;
+    font-size:15px;
+}
+
+button{
+    margin-top:10px;
+
+    padding:15px;
+
+    border:none;
+    border-radius:30px;
+
+    background:hsl(224,30%,27%);
+    color:white;
+
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:hsl(241,81%,54%);
+}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+   <div id="div1"> 
+
+   <p> Your Result</p>
+
+    <div id="stdiv">
+ <p id="numbers">76 <br>
+   <span>of 100</span> </p> 
+</div>
+
+<h1>Great</h1>
+  
+  <p >You scored higher than 65% of <br> the people who have taken <br> these tests.</p> 
+  </div>
+
+  <div id="div2">
+  
+
+    <h2> Summary</h2>
+
+
+<div id="div-inside1" class="marks">
+<img src="./assets/images/icon-memory.svg" alt="">
+   <p>Reaction
+  80 / 100</p>
+</div>
+
+<div id="div-inside2" class="marks">
+  <img src="./assets/images/icon-reaction.svg" alt="">
+<p>  Memory
+  92 / 100</p>
+</div>
+
+<div id="div-inside3" class="marks">
+  <img src="./assets/images/icon-verbal.svg" alt="">
+<p>  Verbal
+  61 / 100</p>
+</div>
+
+<div id="div-inside4" class="marks">
+  <img src="./assets/images/icon-visual.svg" alt="">
+ <p>Visual
+  72 / 100</p> 
+</div>
+
+<button>
+  Continue
+</button>
+
+</div>
+  </div>
+</body>
+</html>
